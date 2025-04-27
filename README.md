@@ -1,1 +1,69 @@
-# Maritime Route Simulation
+# Maritime Vessel Route Simulation & Data Engineering Challenge
+
+## Table of Contents
+- [Background](#background)
+- [Project Overview](#project-overview)
+- [Solution Approach](#solution-approach)
+- [Setup & Running Instructions](#setup--running-instructions)
+- [Design Decisions & Trade-offs](#design-decisions--trade-offs)
+- [Possible Extensions & Improvements](#possible-extensions--improvements)
+- [Requirements](#requirements)
+- [Bonus Implementations (Optional)](#bonus-implementations-optional)
+
+---
+
+## Background
+This project simulates maritime vessel movements and builds a data engineering pipeline to ingest, store, and analyze AIS (Automatic Identification System) messages.  
+The challenge focuses on realistic route generation, AIS message simulation, robust data ingestion, efficient storage, and basic analytics dashoboard.
+
+---
+
+## Project Overview
+
+1. **Route Generation**  
+   - Use a port dataset (e.g., World Port Index).
+   - Randomly select two ports and generate a realistic vessel route using `searoute-py`.
+
+2. **AIS Simulation**  
+   - Simulate vessel movement along the route at fixed intervals (e.g., every 5 minutes).
+   - Generate AIS messages using `pyais` and stream them over a WebSocket.
+   - Support simulation speed factors (`1.0`, `2.0`, `-1`).
+
+3. **Data Engineering & Storage**  
+   - WebSocket client ingests AIS messages.
+   - Parse and store into a PostgreSQL database.
+   - Handle duplicate, out-of-order, or malformed messages.
+   - Implemented indexing for efficient retrieval.
+
+4. **Query & Analytics**  
+   - Retrieve vessel trajectory.
+   - Calculate total distance traveled and average speed within a time window.
+   - Additional analytics features.
+
+---
+
+## Solution Approach
+
+- **Language**: Python
+- **Key Libraries**:
+  - `searoute-py`: Realistic maritime route generation.
+  - `pyais`: AIS message encoding and decoding.
+  - `websockets`: WebSocket server and client.
+  - `PostgreSQL` or `SQLite` (depending on scalability needs) for data storage.
+- **Simulation**:
+  - Vessel objects assigned unique MMSI.
+  - AIS messages simulated at each waypoint interval.
+- **Database Schema**:
+  - Store timestamp, MMSI, latitude, longitude, and payload.
+  - Indexed by MMSI and timestamp for fast queries.
+
+---
+
+## Setup & Running Instructions
+
+### Prerequisites
+- Python 3.8+
+- PostgreSQL (for production use) or SQLite (for simple testing)
+- Pip packages:  
+  ```bash
+  pip install searoute-py pyais websockets psycopg2 sqlalchemy
