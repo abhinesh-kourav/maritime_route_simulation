@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+searoute
+folium
+websockets
+pyais
+geopy
+shapely
+psycopg2
+streamlit
+plotly
+python-dotenv
+sqlalchemy
+-e .

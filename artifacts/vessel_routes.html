@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0ff7a1964405d58665ef72a584ba796 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c0ff7a1964405d58665ef72a584ba796" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c0ff7a1964405d58665ef72a584ba796 = L.map(
+                "map_c0ff7a1964405d58665ef72a584ba796",
+                {
+                    center: [23.087179044520546, -38.05730804109589],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1737620d1f63c416b56b2b0620c8c684 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1737620d1f63c416b56b2b0620c8c684.addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+            var marker_9fb1e580f03413a59f45fa20fb2f1385 = L.marker(
+                [56.03527778, 12.68777778],
+                {
+}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+            var icon_45e572875c42bbf54ed326d3dbd0598b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23e29dfdda8e9195a193cbf176f8cdd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8875efe00d67cdfa663733ef958e48b = $(`<div id="html_b8875efe00d67cdfa663733ef958e48b" style="width: 100.0%; height: 100.0%;">Start: Helsingborg (Sweden)</div>`)[0];
+                popup_23e29dfdda8e9195a193cbf176f8cdd5.setContent(html_b8875efe00d67cdfa663733ef958e48b);
+            
+        
+
+        marker_9fb1e580f03413a59f45fa20fb2f1385.bindPopup(popup_23e29dfdda8e9195a193cbf176f8cdd5)
+        ;
+
+        
+    
+    
+                marker_9fb1e580f03413a59f45fa20fb2f1385.setIcon(icon_45e572875c42bbf54ed326d3dbd0598b);
+            
+    
+            var marker_4881a7afd236ffd4a30f4fafe46405ae = L.marker(
+                [33.75, -118.25],
+                {
+}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+            var icon_d190ef705b2c6ca11eac7b9530eda16f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4542b6e56c38439e2409076d2c4bbf1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a47883201d1e5ce48800169a8e9c03f0 = $(`<div id="html_a47883201d1e5ce48800169a8e9c03f0" style="width: 100.0%; height: 100.0%;">End: Los Angeles (United States)</div>`)[0];
+                popup_4542b6e56c38439e2409076d2c4bbf1b.setContent(html_a47883201d1e5ce48800169a8e9c03f0);
+            
+        
+
+        marker_4881a7afd236ffd4a30f4fafe46405ae.bindPopup(popup_4542b6e56c38439e2409076d2c4bbf1b)
+        ;
+
+        
+    
+    
+                marker_4881a7afd236ffd4a30f4fafe46405ae.setIcon(icon_d190ef705b2c6ca11eac7b9530eda16f);
+            
+    
+            var poly_line_2e1fb8a2c20129449f9c21a9eb31708d = L.polyline(
+                [[56.063887, 12.629725], [56.337379, 12.409121], [56.337382, 12.409118], [56.905254, 11.988567], [57.7, 11.4], [57.8, 10.7333], [57.861058, 9.973674], [57.865686, 9.916106], [57.878654, 9.754772], [57.95, 8.05], [58.0, 5.95], [58.068003, 4.598436], [58.106573, 3.831853], [58.275074, 0.482902], [58.338312, -0.77396], [58.363395, -1.272476], [58.4, -2.0], [58.604304, -2.907994], [58.604364, -2.908261], [58.604474, -2.908751], [58.7, -3.3333], [58.7, -4.799483], [58.7, -5.2], [58.67623, -5.720463], [58.67612, -5.722863], [58.676105, -5.723212], [58.64111, -6.489458], [58.543029, -8.637027], [58.47456, -10.1362], [58.396659, -11.841927], [58.392529, -11.932343], [57.509738, -15.775448], [57.214364, -17.061319], [56.869513, -18.562576], [56.5665, -19.8817], [56.53398, -20.002982], [55.193677, -25.001623], [55.003434, -25.711132], [54.6812, -26.9129], [53.607151, -30.003101], [53.272889, -30.964823], [52.705674, -32.596784], [52.292557, -33.785385], [52.2221, -33.9881], [50.0, -40.0], [48.508366, -41.658626], [45.405304, -45.109081], [45.21651, -45.319011], [45.1104, -45.437], [42.807466, -47.493255], [40.652855, -49.417076], [40.0, -50.0], [35.385732, -55.000024], [35.1041, -55.3052], [34.50451, -55.856709], [34.499781, -55.861059], [32.454415, -57.742406], [32.429312, -57.765496], [30.0, -60.0], [29.75575, -60.223798], [28.537799, -61.33976], [27.483223, -62.306029], [24.9425, -64.634], [24.92641, -64.647219], [22.583364, -66.572194], [20.154246, -66.320768], [20.032, -66.441166], [19.967188, -66.504998], [19.864985, -66.605655], [19.841741, -66.628548], [19.80259, -66.667107], [19.714298, -66.754064], [19.531425, -66.934172], [19.40586, -67.057838], [19.365958, -67.097137], [19.128409, -67.331093], [18.5, -67.95], [17.5, -69.75], [16.455021, -71.173962], [16.157053, -71.579995], [15.683779, -72.224911], [15.665471, -72.249859], [14.906532, -73.284043], [13.6778, -74.9584], [13.668227, -74.970687], [9.75, -80.0], [9.208176, -79.900612], [9.173012, -79.821304], [9.118307, -79.803246], [9.118236, -79.741379], [9.10639, -79.689331], [9.035982, -79.641747], [8.992656, -79.585922], [8.796576, -79.494118], [8.6, -79.5], [7.0, -80.0], [6.9, -81.4], [7.4167, -82.8], [10.035818, -87.997356], [10.1973, -88.3178], [10.580401, -89.110835], [11.48884, -90.991341], [12.9057, -93.9243], [15.5163, -99.644], [15.63055, -99.913376], [18.0, -105.5], [19.341106, -107.20629], [20.1502, -108.2357], [21.395093, -109.832589], [22.3104, -111.0067], [24.926, -113.4508], [27.989265, -116.130461], [32.6652, -117.7702], [32.7669, -117.9312], [33.0261, -117.9861], [33.3332, -118.0244], [33.6276, -118.1215], [33.703898, -118.194489]],
+                {"bubblingMouseEvents": true, "color": "#9039c3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#9039c3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+        var popup_6a5fbd0a1ae0950b7d74ddd50e82280f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ced946aae9dff86b623a660ba93e186 = $(`<div id="html_8ced946aae9dff86b623a660ba93e186" style="width: 100.0%; height: 100.0%;">Vessel_1: Helsingborg to Los Angeles</div>`)[0];
+                popup_6a5fbd0a1ae0950b7d74ddd50e82280f.setContent(html_8ced946aae9dff86b623a660ba93e186);
+            
+        
+
+        poly_line_2e1fb8a2c20129449f9c21a9eb31708d.bindPopup(popup_6a5fbd0a1ae0950b7d74ddd50e82280f)
+        ;
+
+        
+    
+    
+            var marker_ac8724a3bb817c833f2adf0d7bd91f67 = L.marker(
+                [19.7, -71.75],
+                {
+}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+            var icon_d1e2b942b7f5c2bf0448dd785cf9cef6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6257e66bd66d355a5ec2ec3b3b07e8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccddac037610e36daca81aef1e661f26 = $(`<div id="html_ccddac037610e36daca81aef1e661f26" style="width: 100.0%; height: 100.0%;">Start: Pepillo Salcedo (Dominican Republic)</div>`)[0];
+                popup_f6257e66bd66d355a5ec2ec3b3b07e8d.setContent(html_ccddac037610e36daca81aef1e661f26);
+            
+        
+
+        marker_ac8724a3bb817c833f2adf0d7bd91f67.bindPopup(popup_f6257e66bd66d355a5ec2ec3b3b07e8d)
+        ;
+
+        
+    
+    
+                marker_ac8724a3bb817c833f2adf0d7bd91f67.setIcon(icon_d1e2b942b7f5c2bf0448dd785cf9cef6);
+            
+    
+            var marker_4c37d5b7397589d9dcd9ed234881edba = L.marker(
+                [-40.683333, 172.666667],
+                {
+}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+            var icon_19d9bb0f796ee5ffdd501e6d2671f1ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4eeed9955c77c2a09b3366f134e1c61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab8418f18e7c8488ed29a2d8cd9cd8af = $(`<div id="html_ab8418f18e7c8488ed29a2d8cd9cd8af" style="width: 100.0%; height: 100.0%;">End: Collingwood (New Zealand)</div>`)[0];
+                popup_c4eeed9955c77c2a09b3366f134e1c61.setContent(html_ab8418f18e7c8488ed29a2d8cd9cd8af);
+            
+        
+
+        marker_4c37d5b7397589d9dcd9ed234881edba.bindPopup(popup_c4eeed9955c77c2a09b3366f134e1c61)
+        ;
+
+        
+    
+    
+                marker_4c37d5b7397589d9dcd9ed234881edba.setIcon(icon_19d9bb0f796ee5ffdd501e6d2671f1ed);
+            
+    
+            var poly_line_7730fa65eddc3b3627d65b373df48615 = L.polyline(
+                [[20.3, -72.0], [20.016325, -73.796606], [20.016316, -73.796666], [20.016025, -73.798509], [20.015956, -73.798945], [20.0157, -73.800564], [20.015597, -73.80122], [20.015108, -73.804315], [20.014815, -73.80617], [20.014514, -73.808075], [20.0, -73.9], [18.5, -75.0], [17.801104, -75.408284], [16.958398, -75.900579], [15.754186, -76.604059], [14.1387, -77.5478], [13.975975, -77.638723], [9.75, -80.0], [9.208176, -79.900612], [9.173012, -79.821304], [9.118307, -79.803246], [9.118236, -79.741379], [9.10639, -79.689331], [9.035982, -79.641747], [8.992656, -79.585922], [8.796576, -79.494118], [8.6, -79.5], [7.0, -80.0], [5.856645, -81.645708], [4.084134, -84.197004], [3.5134, -85.0185], [0.921943, -88.692785], [-3e-05, -90.0], [-2.512, -92.4763], [-5.0193, -94.9621], [-5.057193, -95.000099], [-7.5169, -97.4667], [-9.310164, -99.296218], [-10.0, -100.0], [-10.096624, -100.092026], [-11.928888, -101.837112], [-12.5389, -102.4181], [-15.0555, -104.8837], [-15.170393, -105.000194], [-17.5444, -107.4073], [-20.0, -110.0], [-25.085, -114.7972], [-25.276681, -115.000105], [-26.949189, -116.770547], [-30.0, -120.0], [-35.1041, -124.6948], [-35.385732, -124.999976], [-40.0, -130.0], [-40.1068, -135.0004], [-40.0, -140.0], [-40.1068, -145.0004], [-40.053547, -147.49331], [-40.0, -150.0], [-40.1068, -155.0004], [-40.0, -160.0], [-40.1068, -165.0004], [-40.0, -170.0], [-40.0, -180.0], [-40.0, -180.0], [-40.0, -180.417456], [-40.0, -182.0], [-42.0, -185.0], [-41.2, -185.5], [-40.3, -186.1], [-40.031831, -187.453803]],
+                {"bubblingMouseEvents": true, "color": "#a50fc6", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a50fc6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+        var popup_c80cdafbef6f7af23862f12fb7f9fe28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ee20b59e87b7cd39d7a87f32e8f1e09 = $(`<div id="html_5ee20b59e87b7cd39d7a87f32e8f1e09" style="width: 100.0%; height: 100.0%;">Vessel_2: Pepillo Salcedo to Collingwood</div>`)[0];
+                popup_c80cdafbef6f7af23862f12fb7f9fe28.setContent(html_5ee20b59e87b7cd39d7a87f32e8f1e09);
+            
+        
+
+        poly_line_7730fa65eddc3b3627d65b373df48615.bindPopup(popup_c80cdafbef6f7af23862f12fb7f9fe28)
+        ;
+
+        
+    
+    
+            var marker_48b9f1f130bf6bbfe031f64347c4af8d = L.marker(
+                [51.033333, -4.2],
+                {
+}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+            var icon_4f2639954116798ad7d7fa40928d7b87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4d97c87533901bf62b0c5764ef1692a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25d80c88c33a3a746e1a9fbd6f67a0da = $(`<div id="html_25d80c88c33a3a746e1a9fbd6f67a0da" style="width: 100.0%; height: 100.0%;">Start: Bideford (United Kingdom)</div>`)[0];
+                popup_c4d97c87533901bf62b0c5764ef1692a.setContent(html_25d80c88c33a3a746e1a9fbd6f67a0da);
+            
+        
+
+        marker_48b9f1f130bf6bbfe031f64347c4af8d.bindPopup(popup_c4d97c87533901bf62b0c5764ef1692a)
+        ;
+
+        
+    
+    
+                marker_48b9f1f130bf6bbfe031f64347c4af8d.setIcon(icon_4f2639954116798ad7d7fa40928d7b87);
+            
+    
+            var marker_4b9637331e044220f95426822f740897 = L.marker(
+                [16.15, 81.15],
+                {
+}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+            var icon_83d9639ce0e391c5ea7019f203edfd80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f302c2fc139145607cb366a8f0cc534 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b50450325f04b70da89d492c15a1267 = $(`<div id="html_0b50450325f04b70da89d492c15a1267" style="width: 100.0%; height: 100.0%;">End: Machilipatnam (India)</div>`)[0];
+                popup_0f302c2fc139145607cb366a8f0cc534.setContent(html_0b50450325f04b70da89d492c15a1267);
+            
+        
+
+        marker_4b9637331e044220f95426822f740897.bindPopup(popup_0f302c2fc139145607cb366a8f0cc534)
+        ;
+
+        
+    
+    
+                marker_4b9637331e044220f95426822f740897.setIcon(icon_83d9639ce0e391c5ea7019f203edfd80);
+            
+    
+            var poly_line_7cf7dd8e554fff413cf3ed565d104898 = L.polyline(
+                [[51.100073, -4.297714], [51.17633, -4.575119], [51.432338, -4.126358], [51.546335, -5.056458], [51.690603, -5.129927], [50.4096, -5.8714], [49.997799, -5.783648], [49.862255, -5.754764], [49.795016, -5.740436], [49.782237, -5.979701], [49.363661, -6.196961], [48.759616, -6.510489], [48.561136, -6.61351], [48.218947, -6.791122], [47.968223, -6.921259], [46.539604, -7.66278], [45.91425, -7.987368], [44.934776, -8.49576], [43.924891, -9.019938], [43.689329, -9.142206], [43.688493, -9.14264], [43.687223, -9.143299], [43.0, -9.5], [40.7798, -9.9844], [38.5, -9.6], [37.781589, -9.452092], [36.8, -9.25], [36.549727, -8.219465], [36.31906, -7.26966], [35.95, -5.75], [35.968819, -5.354867], [35.97289, -5.269383], [36.0, -4.7], [36.156455, -3.683043], [36.158352, -3.670714], [36.220888, -3.264225], [36.324512, -2.590675], [36.377724, -2.244793], [36.473171, -1.62439], [36.666667, -0.366667], [37.2, 3.1], [37.4, 7.5], [37.4851, 10.1431], [37.489085, 10.372293], [37.5, 11.0], [37.454891, 11.172235], [37.283186, 11.827836], [37.215493, 12.086301], [37.212689, 12.097004], [37.209117, 12.110644], [36.907095, 13.263819], [36.4, 15.2], [36.086854, 16.726588], [35.845726, 17.902084], [35.126694, 21.407365], [34.8, 23.0], [34.187436, 24.926664], [34.011915, 25.478721], [33.748752, 26.306431], [33.328, 27.6298], [33.219565, 27.927542], [33.115811, 28.212434], [32.863395, 28.905525], [32.316071, 30.408377], [31.7, 32.1], [31.298117, 32.387159], [30.945814, 32.306671], [30.318359, 32.382202], [30.213982, 32.557983], [29.7, 32.6], [27.9, 33.75], [27.0, 34.5], [23.6, 37.0], [20.75, 38.9], [16.3, 41.2], [15.0, 42.0], [12.7, 43.3], [12.40439, 43.746586], [12.0, 45.0], [13.0, 51.0], [12.577758, 53.059021], [12.2395, 54.7085], [11.4317, 58.3951], [11.083455, 59.894005], [10.866984, 60.825733], [10.5802, 62.0601], [10.031585, 64.303249], [9.934828, 64.698862], [9.862937, 64.992809], [9.6889, 65.7044], [8.881605, 68.858995], [8.7613, 69.3291], [8.6701, 69.671733], [8.582747, 69.999915], [8.365148, 70.817426], [8.356493, 70.84994], [7.8014, 72.9354], [6.966807, 75.966807], [6.8131, 76.5251], [5.8, 80.1], [5.9, 81.9], [7.25, 82.25], [13.0, 81.0], [16.0, 82.0]],
+                {"bubblingMouseEvents": true, "color": "#4921e2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4921e2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_c0ff7a1964405d58665ef72a584ba796);
+        
+    
+        var popup_c0ca0378452651eb0859dd40959a6c21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90eadb6fb3c9367176c922930e7c8a07 = $(`<div id="html_90eadb6fb3c9367176c922930e7c8a07" style="width: 100.0%; height: 100.0%;">Vessel_3: Bideford to Machilipatnam</div>`)[0];
+                popup_c0ca0378452651eb0859dd40959a6c21.setContent(html_90eadb6fb3c9367176c922930e7c8a07);
+            
+        
+
+        poly_line_7cf7dd8e554fff413cf3ed565d104898.bindPopup(popup_c0ca0378452651eb0859dd40959a6c21)
+        ;
+
+        
+    
+</script>
+</html>
