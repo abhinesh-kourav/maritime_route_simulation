@@ -1,6 +1,7 @@
 import logging
 import asyncio
 from simulation.ais_simulation import main_simulation, test_client
+from input_values import NUM_VESSELS, INTERVAL_MINUTES, SPEED_FACTOR
 import os
 
 os.makedirs('logs', exist_ok=True)
@@ -15,9 +16,9 @@ logging.basicConfig(
 logger = logging.getLogger("simulation")
 
 ##### INPUT VALUES #####
-num_vessels = 3
-interval_minutes = 5.0
-speed_factor = 10
+num_vessels = NUM_VESSELS
+interval_minutes = INTERVAL_MINUTES
+speed_factor = SPEED_FACTOR
 mode = "server" #"server" or "client"
 
 if __name__ == "__main__":
