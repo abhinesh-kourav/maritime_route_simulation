@@ -35,28 +35,6 @@ class AISMessage:
         if self.validation_errors is None:
             self.validation_errors = []
 
-
-@dataclass
-class AISMessage:
-    """Data class to store validated AIS message data"""
-    message_id: str
-    mmsi: int
-    timestamp: datetime.datetime
-    payload: str
-    latitude: float
-    longitude: float
-    speed: Optional[float] = None
-    course: Optional[float] = None
-    heading: Optional[float] = None
-    navigation_status: Optional[int] = None
-    message_type: Optional[int] = None
-    is_valid: bool = True
-    validation_errors: List[str] = None
-    
-    def __post_init__(self):
-        if self.validation_errors is None:
-            self.validation_errors = []
-
 class DataQualityMonitor:
     """Track data quality metrics for the ingestion pipeline"""
     def __init__(self):
