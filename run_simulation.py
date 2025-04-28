@@ -17,7 +17,7 @@ logger = logging.getLogger("simulation")
 ##### INPUT VALUES #####
 num_vessels = 3
 interval_minutes = 5.0
-speed_factor = -1
+speed_factor = 10
 mode = "server" #"server" or "client"
 
 if __name__ == "__main__":
