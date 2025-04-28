@@ -73,6 +73,6 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
 - Setup database and initiate data ingestion -> Open a new cmd terminal 
   ```bash
   python run_data_receiver.py
-- Launch the dashboard on broswer -> Open a new cmd terminal
+- Launch the dashboard on browser -> Open a new cmd terminal
   ```bash
   streamlit run dashboard.py
