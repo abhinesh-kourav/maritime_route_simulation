@@ -16,8 +16,7 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
 ## Solution Approach
 
 ### Data Flow Architecture
-   ```bash
-   Simulator → WebSocket → Data Receiver → PostgreSQL/PostGIS → Dashboard
+Simulator → WebSocket → Data Receiver → PostgreSQL/PostGIS → Dashboard
 Our solution follows a pipeline architecture where vessel position data flows from simulation to visualization.
 
 ### Core Components
