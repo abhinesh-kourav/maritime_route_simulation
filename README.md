@@ -70,9 +70,9 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
 - Run the simulation and websocket server  
   ```bash
   python run_simulation.py
-- Initiate db setup and data ingestion -> Open a new cmd terminal 
+- Setup database and initiate data ingestion -> Open a new cmd terminal 
   ```bash
   python run_data_receiver.py
-- Launch the dashboard on broswer
+- Launch the dashboard on broswer -> Open a new cmd terminal
   ```bash
   streamlit run dashboard.py
