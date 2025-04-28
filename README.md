@@ -2,7 +2,6 @@
 
 ## Table of Contents
 - [Background](#background)
-- [Project Overview](#project-overview)
 - [Solution Approach](#solution-approach)
 - [Setup & Running Instructions](#setup--running-instructions)
 
@@ -14,44 +13,38 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
 
 ---
 
-## Project Overview
-
-1. **Route Generation**  
-   - Use a port dataset (e.g., World Port Index).
-   - Randomly select two ports and generate a realistic vessel route using `searoute-py`.
-
-2. **AIS Simulation**  
-   - Simulate vessel movement along the route at fixed intervals (e.g., every 5 minutes).
-   - Generate AIS messages using `pyais` and stream them over a WebSocket.
-   - Support simulation speed factors (`1.0`, `2.0`, `-1`).
-
-3. **Data Engineering & Storage**  
-   - WebSocket client ingests AIS messages.
-   - Parse and store into a PostgreSQL database.
-   - Handle duplicate, out-of-order, or malformed messages.
-   - Implemented indexing for efficient retrieval.
-
-4. **Query & Analytics**  
-   - Retrieve vessel trajectory.
-   - Calculate total distance traveled and average speed within a time window.
-   - Additional analytics features.
-
----
-
 ## Solution Approach
 
-- **Language**: Python
-- **Key Libraries**:
-  - `searoute-py`: Realistic maritime route generation.
-  - `pyais`: AIS message encoding and decoding.
-  - `websockets`: WebSocket server and client.
-  - `PostgreSQL` or `SQLite` (depending on scalability needs) for data storage.
-- **Simulation**:
-  - Vessel objects assigned unique MMSI.
-  - AIS messages simulated at each waypoint interval.
-- **Database Schema**:
-  - Store timestamp, MMSI, latitude, longitude, and payload.
-  - Indexed by MMSI and timestamp for fast queries.
+### Data Flow Architecture
+```bash
+Simulator → WebSocket → Data Receiver → PostgreSQL/PostGIS → Dashboard
+Our solution follows a pipeline architecture where vessel position data flows from simulation to visualization.
+
+### Core Components
+
+1. **Vessel Simulator**
+   - Models realistic vessel movement using geodesic calculations
+   - Generates AIS messages with position, heading, and speed
+   - Broadcasts data through a WebSocket server
+
+2. **Data Receiver**
+   - Connects to the WebSocket stream
+   - Validates and processes incoming AIS messages
+   - Implements buffered batch inserts for database efficiency
+   - Tracks data quality metrics
+
+3. **Spatial Database**
+   - Uses PostgreSQL with PostGIS for geographic data
+   - Optimized schema design with spatial indexing
+   - Stores both message history and vessel metadata
+
+4. **Interactive Dashboard**
+   - Real-time map visualization
+   - Historical track analysis
+   - Performance metrics and statistics
+   - Implements caching for responsive user experience
+
+This approach enables a complete vessel tracking pipeline while maintaining flexibility for extension to real-world AIS data sources.
 
 ---
 
