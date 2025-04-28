@@ -417,25 +417,4 @@ async def main_data_receiver(websocket_uri: str, db_config: Dict[str, Any]):
         logger.info("Shutting down...")
     finally:
         db_manager.close()
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="AIS Data Receiver")
-    parser.add_argument("--websocket-uri", default="ws://localhost:8765", 
-                      help="WebSocket server URI")
-    parser.add_argument("--db-host", default="localhost", help="Database host")
-    parser.add_argument("--db-port", type=int, default=5432, help="Database port")
-    parser.add_argument("--db-name", default="ais_data", help="Database name")
-    parser.add_argument("--db-user", default="postgres", help="Database user")
-    parser.add_argument("--db-password", default="postgres", help="Database password")
-    
-    args = parser.parse_args()
-    
-    db_config = {
-        "host": args.db_host,
-        "port": args.db_port,
-        "dbname": args.db_name,
-        "user": args.db_user,
-        "password": args.db_password
-    }
-    
-    asyncio.run(main_data_receiver(args.websocket_uri, db_config))
+        
