@@ -61,9 +61,22 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
 
 ## Setup & Running Instructions
 
-### Prerequisites
-- Python 3.8+
-- PostgreSQL (for production use) or SQLite (for simple testing)
-- Pip packages:  
+- Install PostgreSQL 14 with PostGIS extension.
+- Create a virtual emvironment with Python 3.9 and install required packages given in requirements.txt using cmd
+   ```bash
+   conda create -n p39 python=3.9
+   conda activate p39
+   pip install -r requirements.txt
+   ```bash
+- Run the simulation and websocket server  
   ```bash
-  pip install searoute-py pyais websockets psycopg2 sqlalchemy
+  python run_simulation.py
+  ```bash
+- Initiate db setup and data ingestion -> Open a new cmd terminal 
+  ```bash
+  python run_data_receiver.py
+  ```bash
+- Launch the dashboard on broswer
+  ```bash
+  streamlit run dashboard.py
+  ```bash
