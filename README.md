@@ -20,7 +20,6 @@ Simulator → WebSocket → Data Receiver → PostgreSQL/PostGIS → Dashboard
 Our solution follows a pipeline architecture where vessel position data flows from simulation to visualization.
 
 ### Core Components
-
 1. **Vessel Simulator**
    - Models realistic vessel movement using geodesic calculations
    - Generates AIS messages with position, heading, and speed
@@ -38,7 +37,7 @@ Our solution follows a pipeline architecture where vessel position data flows fr
    - Stores both message history and vessel metadata
 
 4. **Interactive Dashboard**
-   - Real-time map visualization
+   - Map visualizations
    - Historical track analysis
    - Performance metrics and statistics
    - Implements caching for responsive user experience
