@@ -67,16 +67,12 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
    conda create -n p39 python=3.9
    conda activate p39
    pip install -r requirements.txt
-   ```bash
 - Run the simulation and websocket server  
   ```bash
   python run_simulation.py
-  ```bash
 - Initiate db setup and data ingestion -> Open a new cmd terminal 
   ```bash
   python run_data_receiver.py
-  ```bash
 - Launch the dashboard on broswer
   ```bash
   streamlit run dashboard.py
-  ```bash
