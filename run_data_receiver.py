@@ -4,7 +4,9 @@ import sys
 import argparse
 from data_engineering.db_setup import create_database, setup_database
 from data_engineering.ais_data_receiver import main_data_receiver
+import os
 
+os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

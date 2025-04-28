@@ -1,4 +1,4 @@
 vessel_id,start_port,start_country,start_lat,start_lon,end_port,end_country,end_lat,end_lon,route_points
-Vessel_1,Helsingborg,Sweden,56.03527778,12.68777778,Los Angeles,United States,33.75,-118.25,118
-Vessel_2,Pepillo Salcedo,Dominican Republic,19.7,-71.75,Collingwood,New Zealand,-40.683333,172.666667,70
-Vessel_3,Bideford,United Kingdom,51.033333,-4.2,Machilipatnam,India,16.15,81.15,104
+Vessel_1,Bathurst Harbour,Canada,47.63333333,-65.63333333,Montebello,Canada,45.65,-74.933333,29
+Vessel_2,Hachinohe Ko,Japan,40.533333,141.55,Bay City,United States,46.866667,-124.066667,43
+Vessel_3,Tabarka,Tunisia,36.966667,8.766667,Algonac,United States,42.616667,-82.516667,77
