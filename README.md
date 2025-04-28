@@ -48,7 +48,6 @@ This approach enables a complete vessel tracking pipeline while maintaining flex
 ---
 
 ## Setup & Running Instructions
-
 - Install PostgreSQL 14 with PostGIS extension. Keep user = "postgres", password="postgres"
 - Create a virtual emvironment with Python 3.9
    ```bash
@@ -59,7 +58,7 @@ This approach enables a complete vessel tracking pipeline while maintaining flex
 - Install required packages using requirements.txt
    ```bash
    pip install -r requirements.txt
-- Run the simulation and websocket server  
+- Run the simulation and websocket server -> Open run_simulation.py and modify variables like no. of vessels, message generation interval and simulation speed factor as per requirements
   ```bash
   python run_simulation.py
 - Setup database and initiate data ingestion -> Open a new cmd terminal 
