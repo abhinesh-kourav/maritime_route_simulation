@@ -61,7 +61,7 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
 
 ## Setup & Running Instructions
 
-- Install PostgreSQL 14 with PostGIS extension.
+- Install PostgreSQL 14 with PostGIS extension. Keep user = "postgres", password="postgres"
 - Create a virtual emvironment with Python 3.9 and install required packages given in requirements.txt using cmd terminal
    ```bash
    conda create -n p39 python=3.9
