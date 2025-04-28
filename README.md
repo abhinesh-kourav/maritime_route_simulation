@@ -62,17 +62,23 @@ The challenge focuses on realistic route generation, AIS message simulation, rob
 ## Setup & Running Instructions
 
 - Install PostgreSQL 14 with PostGIS extension. Keep user = "postgres", password="postgres"
-- Create a virtual emvironment with Python 3.9 and install required packages given in requirements.txt using cmd terminal
+- Create a virtual emvironment with Python 3.9
    ```bash
    conda create -n p39 python=3.9
+- Activate the new virtual environment
+   ```bash
    conda activate p39
+- Install required packages using requirements.txt
+   ```bash
    pip install -r requirements.txt
 - Run the simulation and websocket server  
   ```bash
   python run_simulation.py
 - Setup database and initiate data ingestion -> Open a new cmd terminal 
   ```bash
+  conda activate p39
   python run_data_receiver.py
 - Launch the dashboard on browser -> Open a new cmd terminal
   ```bash
+  conda activate p39
   streamlit run dashboard.py
