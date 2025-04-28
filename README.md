@@ -5,10 +5,6 @@
 - [Project Overview](#project-overview)
 - [Solution Approach](#solution-approach)
 - [Setup & Running Instructions](#setup--running-instructions)
-- [Design Decisions & Trade-offs](#design-decisions--trade-offs)
-- [Possible Extensions & Improvements](#possible-extensions--improvements)
-- [Requirements](#requirements)
-- [Bonus Implementations (Optional)](#bonus-implementations-optional)
 
 ---
 
