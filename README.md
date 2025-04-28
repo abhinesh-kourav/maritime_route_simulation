@@ -58,7 +58,7 @@ This approach enables a complete vessel tracking pipeline while maintaining flex
 - Install required packages using requirements.txt
    ```bash
    pip install -r requirements.txt
-- Open input.py file and modify the input variables like number of vessels, message generation interval and simulation speed factor as per requirements
+- Open input_values.py file and modify the input variables like number of vessels, message generation interval and simulation speed factor as per requirements
 - Run the simulation and websocket server
   ```bash
   python run_simulation.py
